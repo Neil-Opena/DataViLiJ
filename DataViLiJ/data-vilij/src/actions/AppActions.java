@@ -55,14 +55,21 @@ public final class AppActions implements ActionComponent {
 		//set up file chooser for tsd files
 		this.tsdFileChooser = new FileChooser();
 		tsdFileChooser.getExtensionFilters().add(new ExtensionFilter(manager.getPropertyValue(DATA_FILE_EXT_DESC.name()), manager.getPropertyValue(DATA_FILE_EXT.name())));
-		Path current = Paths.get(".").toAbsolutePath();
-		Path dataDirectory = current.resolve(manager.getPropertyValue(DATA_RESOURCE_PATH.name()));
+		Path current = Paths.get(Paths.get(".").toAbsolutePath().toString().replace("\\", "/"));
+		
+		String testString = getClass().getResource("AppActions.class").toString().split(":")[0];
+		String toResolve = "";
+		if(!testString.equals("file")){
+			toResolve = "DataViLiJ/";
+		}
+
+		Path dataDirectory = current.resolve(toResolve + manager.getPropertyValue(DATA_RESOURCE_PATH.name()));
 		tsdFileChooser.setInitialDirectory(new File(dataDirectory.toString()));
 
 		//set up file chooser for screenshots
 		this.screenShotChooser = new FileChooser();
 		screenShotChooser.getExtensionFilters().add(new ExtensionFilter(manager.getPropertyValue(PNG_EXT_DESC.name()), manager.getPropertyValue(PNG_EXT.name())));
-		Path screenshotDirectory = current.resolve(manager.getPropertyValue(SCREENSHOT_RESOURCE_PATH.name()));
+		Path screenshotDirectory = current.resolve(toResolve + manager.getPropertyValue(SCREENSHOT_RESOURCE_PATH.name()));
 		screenShotChooser.setInitialDirectory(new File(screenshotDirectory.toString()));
 
 		appUI = (AppUI) applicationTemplate.getUIComponent();

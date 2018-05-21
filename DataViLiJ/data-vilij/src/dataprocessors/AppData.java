@@ -348,8 +348,6 @@ public class AppData implements DataComponent {
 		 */
 		Path current = Paths.get(Paths.get(".").toAbsolutePath().toString().replace("\\", "/"));
 
-		//if running on NetBeans change 
-		getClass().getResource("AppData.class");
 		String testString = getClass().getResource("AppData.class").toString().split(":")[0];
 		String toResolve = "DataViLiJ/data-vilij/src/";
 		if(testString.equals("file")){
