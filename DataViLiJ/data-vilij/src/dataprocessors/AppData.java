@@ -348,8 +348,15 @@ public class AppData implements DataComponent {
 		 */
 		Path current = Paths.get(Paths.get(".").toAbsolutePath().toString().replace("\\", "/"));
 
-		File classificationDirectory = current.resolve("data-vilij/src/classification").toFile();
-		File clusteringDirectory = current.resolve("data-vilij/src/clustering").toFile();
+		//if running on NetBeans change 
+		getClass().getResource("AppData.class");
+		String testString = getClass().getResource("AppData.class").toString().split(":")[0];
+		String toResolve = "DataViLiJ/data-vilij/src/";
+		if(testString.equals("file")){
+			toResolve = "data-vilij/src/";
+		}
+		File classificationDirectory = current.resolve(toResolve + "classification").toFile();
+		File clusteringDirectory = current.resolve(toResolve + "clustering").toFile();
 
 		System.out.println("classification Directory = " + classificationDirectory);
 		System.out.println("clustering Directory = " + clusteringDirectory);
