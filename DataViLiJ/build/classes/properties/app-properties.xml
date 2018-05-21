@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This XML file allows us to easily customize the visual aesthetics of the user interface. Note that this properties
+file is only for the standard high-level controls for an application, so it does not include properties meant for any
+functionality within the main workspace. -->
+<properties>
+    <property_list>
+        <!-- RESOURCE FILES AND FOLDERS -->
+        <property name="DATA_RESOURCE_PATH" value="data-vilij/resources/data"/> <!--- package name for data resource --> 
+	<property name="SCREENSHOT_RESOURCE_PATH" value="data-vilij/resources/screenshots"/>
+
+        <!-- USER INTERFACE ICON FILES -->
+        <property name="SCREENSHOT_ICON" value="screenshot.png"/>
+	<property name="BACK_ICON" value="back-arrow.png"/>
+	<property name="PLAY_ICON" value="play.png"/>
+	<property name="GEAR_ICON" value="gears.png"/>
+
+        <!-- TOOLTIPS FOR BUTTONS -->
+        <property name="SCREENSHOT_TOOLTIP" value="Screenshot"/> <!-- will print current view of image to a file -->
+	<property name="BACK_TOOLTIP" value="Return to Algorithm Types"/>
+	<property name="CLASSIFICATION_TOOLTIP" value="Display Classification Algorithms"/>
+	<property name="CLUSTERING_TOOLTIP" value="Display Clustering Algorithms"/>
+	<property name="PLAY_TOOLTIP" value="Run the Algorithm"/>
+	<property name="CONFIG_TOOLTIP" value="Configure Algorithm"/>
+
+        <!-- WARNING MESSAGES -->
+        <property name="EXIT_WHILE_RUNNING_WARNING"
+                  value="An algorithm is running. If you exit now, all unsaved changes will be lost. Are you sure?"/>
+
+        <!-- ERROR MESSAGES -->
+        <property name="RESOURCE_SUBDIR_NOT_FOUND" value="Directory not found under resources."/>
+	<property name="INVALID_DATA_MESSAGE" value="The data in the text area does not follow the .tsd format.&#xD;Each line of data must follow the following format: @[name] [label] [x,y]. Each component separated by a tab. " />
+	<property name="NO_DATA_MESSAGE" value="There is nothing to display" />
+    	<property name="IO_SAVE_ERROR_MESSAGE" value="An error has occurred while saving the file." />
+	<property name="IO_LOAD_ERROR_MESSAGE" value="An error has occurred while loading the file." />
+	<property name="SAVE_ERROR_MESSAGE" value="Cannot save to a .tsd file. Invalid data &#xD;"/>
+	<property name="LOAD_ERROR_MESSAGE" value="Cannot load. Not a valid Tab-Separated Data File (.tsd) &#xD;"/>
+	<property name="LARGE_DATA_MESSAGE_1" value="Data exceeded text area capacity.&#xD;Loaded data consists of "/>
+	<property name="LARGE_DATA_MESSAGE_2" value=" lines.&#xD;Showing only the first 10 in the text area."/>
+	<property name="FILE_NOT_FOUND_MESSAGE" value="Specified File was not found."/>
+	<property name="LINE" value="Line "/>
+	<property name="INVALID_CONFIG_MESSAGE" value="Default values have been inserted."/>
+
+        <!-- APPLICATION-SPECIFIC MESSAGE TITLES -->
+        <property name="SAVE_UNSAVED_WORK_TITLE" value="Save Current Work"/>
+	<property name="INVALID_DATA_TITLE" value="Invalid Data"/>
+	<property name="IO_ERROR_TITLE" value="Something went wrong" />
+	<property name="SAVE_ERROR_TITLE" value="Cannot Save File"/>
+	<property name="LOAD_ERROR_TITLE" value="Cannot Load File"/>
+	<property name="LARGE_DATA_TITLE" value="Data Exceeded Capacity"/>
+	<property name="FILE_NOT_FOUND_TITLE" value="File Not Found"/>
+	<property name="APPLICATION_TITLE" value="Data ViLiJ"/>
+	<property name="CONFIG_TITLE" value="Configure Algorithm"/>
+	<property name="CONFIG_WINDOW_TITLE" value="Algorithm Run Configuration"/>
+	<property name="INVALID_CONFIG_TITLE" value="Invalid values"/>
+
+        <!-- APPLICATION-SPECIFIC MESSAGES -->
+        <property name="SAVE_UNSAVED_WORK" value="Would you like to save current work?"/>
+
+        <!-- APPLICATION-SPECIFIC PARAMETERS -->
+        <property name="DATA_FILE_EXT" value="*.tsd"/>
+        <property name="DATA_FILE_EXT_DESC" value="Tab-Separated Data File"/>
+        <property name="TEXT_AREA" value="Data"/>
+        <property name="SPECIFIED_FILE" value=" specified file"/>
+	<property name="PNG_EXT" value="*.png"/>
+	<property name="PNG_EXT_DESC" value="PNG"/>
+	<property name="SCREENSHOT_TYPE" value="png"/>
+	<property name="READ_ONLY" value="Read Only"/>
+	<property name="AVERAGE_Y" value="Average Y"/>
+	<property name="AVERAGE_Y_TOOLTIP" value="Average Y Value = "/>
+	<property name="DECIMAL_FORMAT" value="%.2f"/>
+	<property name="NULL" value="null"/>
+
+	<!-- LAYOUT USER INTERFACE -->
+	<property name="TITLE_STYLE" value="chart-title"/>
+	<property name="DISPLAY_BUTTON" value="Display"/>
+	<property name="CHART_TITLE" value="Data Visualization"/>
+	<property name="DONE" value="Done"/>
+	<property name="EDIT" value="Edit"/>
+	<property name="ALGORITHM_TYPE" value="Algorithm Type"/>
+	<property name="ALGORITHM" value="Algorithm "/>
+	<property name="ITERATION_LABEL" value="Max Iterations:"/>
+	<property name="INTERVAL_LABEL" value="Update Interval:"/>
+	<property name="NUMLABELS_LABEL" value="Number of Labels:"/>
+	<property name="CHECKBOX_LABEL" value="Continuous Run?"/>
+
+	<!-- CSS -->
+	<property name="CSS_FILE" value="data-vilij.css"/>
+	<property name="GRAY_TEXT" value="gray"/>
+	<property name="HIDE_SYMBOL" value="hide-symbol"/>
+	<property name="DISPLAY_LINE" value="display-line"/>
+	<property name="TOOLBAR" value="toolbar"/>
+	<property name="DISPLAY_INFO" value="display-info"/>
+	<property name="TYPE_CONTAINER" value="type-container"/>
+	<property name="TYPES_BUTTON" value="types-button"/>
+	<property name="ALGORITHM_UI" value="algorithm-ui"/>
+	<property name="TYPES_TITLE" value="types-title"/>
+	<property name="ALGORITHMS_CSS" value="algorithms"/>
+	<property name="ALGORITHM_TYPE_CSS" value="algorithm-type"/>
+	<property name="ALGORITHM_NAME_CSS" value="algorithm-name"/>
+	<property name="RUN_BUTTON" value="run-button"/>
+	<property name="TOGGLE_BUTTON" value="toggle-button"/>
+	<property name="CONFIG_BUTTON" value="config-button"/>
+	<property name="CONFIG_TITLE_CSS" value="config-window-title"/>
+
+	<!-- STRING MESSAGES -->
+	<property name="INFO_1" value=" instances with "/>
+	<property name="INFO_2" value=" labels loaded from "/>
+	<property name="INFO_3" value=" labels. &#xD;"/>
+	<property name="INFO_4" value="The labels are:&#xD;"/>
+
+    </property_list>
+    <property_options_list/>
+</properties>
