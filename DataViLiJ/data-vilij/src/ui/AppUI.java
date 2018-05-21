@@ -598,7 +598,9 @@ public final class AppUI extends UITemplate {
 		algorithmRunWindow.setScene(new Scene(algorithmRunContainer));
 		algorithmRunWindow.getScene().getStylesheets().add(getClass().getResource(cssPath).toExternalForm());
 		algorithmRunWindow.setMinHeight(250);
+		algorithmRunWindow.setMaxHeight(250);
 		algorithmRunWindow.setMinWidth(300);
+		algorithmRunWindow.setMaxWidth(300);
 		algorithmRunWindow.setResizable(false);
 		algorithmRunWindow.setAlwaysOnTop(true);
 		algorithmRunWindow.setTitle("Running");
@@ -1009,6 +1011,7 @@ public final class AppUI extends UITemplate {
 			layout();
 			setUpActions();
 			this.setTitle(manager.getPropertyValue(CONFIG_TITLE.name()));
+			this.setResizable(false);
 			this.setScene(currentScene);
 			this.getScene().getStylesheets().add(getClass().getResource(cssPath).toExternalForm());
 		}

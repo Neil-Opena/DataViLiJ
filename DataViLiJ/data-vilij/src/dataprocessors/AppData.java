@@ -347,8 +347,8 @@ public class AppData implements DataComponent {
 		of the available algorithms, without any having been hard-coded.
 		 */
 		Path current = Paths.get(".").toAbsolutePath();
-		File classificationDirectory = current.resolve("data-vilij/src/classification").toFile();
-		File clusteringDirectory = current.resolve("data-vilij/src/clustering").toFile();
+		File classificationDirectory = current.resolve("data-vilij\\src\\classification").toFile();
+		File clusteringDirectory = current.resolve("data-vilij\\src\\clustering").toFile();
 
 		classificationAlgorithms = new ArrayList<>();
 		classificationConfigurations = new ArrayList<>();
