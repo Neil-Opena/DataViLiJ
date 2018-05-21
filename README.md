@@ -1,4 +1,6 @@
 # DataViLiJ
 Data Visualization Application
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![classification gif](https://github.com/Neil1114/CSE219-Software-Design/blob/master/DataViLiJ/classification_gif.gif "Classification Gif")
+
+![clustering gif](https://github.com/Neil1114/CSE219-Software-Design/blob/master/DataViLiJ/clustering_gif.gif "Clustering Gif")
