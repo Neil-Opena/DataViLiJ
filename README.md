@@ -4,7 +4,7 @@ Data Visualization Application
 
 *Final Project for CSE 219 - Software Design & Development*
 
-t[Course Repository](https://github.com/Neil1114/CSE219-Software-Design)
+[Course Repository](https://github.com/Neil1114/CSE219-Software-Design)
 
 The following shows the user interface of the application and algorithms running and dynamically updating the user provided data set.
 
