@@ -4,7 +4,7 @@ Data Visualization Application
 
 *Final Project for CSE 219 - Software Design & Development*
 
-[Course Repository](https://github.com/Neil1114/CSE219-Software-Design)
+t[Course Repository](https://github.com/Neil1114/CSE219-Software-Design)
 
 The following shows the user interface of the application and algorithms running and dynamically updating the user provided data set.
 
@@ -21,4 +21,4 @@ To download the application, simply download the current version release:
 The application must be **unzipped** prior to running.
 
 To run, simply click the JAR file (executable), or navigate to the folder using the command line and run:
-```java -jar DataViLiJ.jar
+``` java -jar DataViLiJ.jar ```
