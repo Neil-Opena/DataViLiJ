@@ -21,4 +21,5 @@ To download the application, simply download the current version release:
 The application must be **unzipped** prior to running.
 
 To run, simply click the JAR file (executable), or navigate to the folder using the command line and run:
+
 ``` java -jar DataViLiJ.jar ```
